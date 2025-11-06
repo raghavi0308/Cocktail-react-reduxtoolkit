@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Cocktail-react-reduxtoolkit/static/css/main.32fa2d46.css",
+    "main.js": "/Cocktail-react-reduxtoolkit/static/js/main.0c4eda82.js",
+    "static/js/787.a0503be5.chunk.js": "/Cocktail-react-reduxtoolkit/static/js/787.a0503be5.chunk.js",
+    "index.html": "/Cocktail-react-reduxtoolkit/index.html",
+    "main.32fa2d46.css.map": "/Cocktail-react-reduxtoolkit/static/css/main.32fa2d46.css.map",
+    "main.0c4eda82.js.map": "/Cocktail-react-reduxtoolkit/static/js/main.0c4eda82.js.map",
+    "787.a0503be5.chunk.js.map": "/Cocktail-react-reduxtoolkit/static/js/787.a0503be5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32fa2d46.css",
+    "static/js/main.0c4eda82.js"
+  ]
+}
