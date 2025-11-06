@@ -1,0 +1,325 @@
+/* Global typography and background */
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: #1f2937;
+  background: radial-gradient(1200px 800px at 20% -10%, #f3f6ff 0%, #f7f8fc 40%, #fbfbfd 70%, #ffffff 100%);
+  padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.2px;
+}
+
+.container {
+  max-width: 1140px;
+}
+
+/* Navbar theme */
+.navbar-dark.bg-dark {
+  background: linear-gradient(135deg, #0b1220, #151c2b) !important;
+  box-shadow: 0 4px 18px rgba(17, 24, 39, 0.22);
+}
+
+/* Increase header vertical space */
+.navbar {
+  padding-top: 18px !important;
+  padding-bottom: 18px !important;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.navbar .nav-link.active {
+  color: #f7f7fb !important;
+  position: relative;
+}
+
+.navbar .nav-link.active::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: -6px;
+  height: 2px;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24, #f59e0b);
+  border-radius: 2px;
+}
+
+/* Cocktail Card */
+.cocktail-card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(17, 24, 39, 0.08);
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.cocktail-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(17, 24, 39, 0.12);
+}
+
+.cocktail-media-wrap {
+  position: relative;
+  padding-top: 100%; /* perfect square for a neat grid */
+  overflow: hidden;
+}
+
+.cocktail-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(1.05) contrast(1.05);
+  transform: scale(1.01);
+}
+
+.cocktail-body {
+  padding: 14px 14px 16px;
+}
+
+.cocktail-title {
+  margin: 0 0 6px 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.cocktail-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+}
+
+.cocktail-meta .badge.bg-outline {
+  border: 1px solid #d1d5db;
+  color: #374151;
+  background: transparent;
+  font-weight: 600;
+}
+
+.cocktail-meta .dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #9ca3af;
+  display: inline-block;
+}
+
+/* Details Button */
+.btn.btn-details {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, #111827, #1f2937);
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(17, 24, 39, 0.3);
+  transition: transform 150ms ease, box-shadow 150ms ease, background 150ms ease;
+}
+
+.btn.btn-details:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(17, 24, 39, 0.25);
+  background: linear-gradient(135deg, #0b1220, #151c2b);
+  text-decoration: none;
+}
+
+.btn.btn-details:active {
+  transform: translateY(0);
+}
+
+/* Product details page */
+.details-hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+
+.details-img {
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(17, 24, 39, 0.12);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.details-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.details-meta {
+  color: #6b7280;
+  margin-bottom: 14px;
+}
+
+.pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 600;
+  margin-right: 8px;
+  margin-bottom: 6px;
+}
+
+/* ---------- Content pages (About, Contact, Help) ---------- */
+.page-section {
+  padding-top: 8px;
+}
+
+.page-title {
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.page-lead {
+  color: #6b7280;
+  font-size: 1.02rem;
+}
+
+.section-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  border: 1px solid #eef0f4;
+}
+
+/* Form refinements */
+.form-label {
+  font-weight: 600;
+}
+
+.form-control {
+  border-radius: 10px;
+  border-color: #e5e7eb;
+  background: #fbfbfd;
+}
+
+.form-control:focus {
+  border-color: #9ca3af;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(55, 65, 81, 0.08);
+}
+
+/* Accordion (Help) */
+.accordion .accordion-item {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eceff4;
+  box-shadow: 0 6px 22px rgba(17, 24, 39, 0.06);
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #f8fafc, #f3f4f6);
+}
+
+/* Search box */
+.search-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 12px 18px 0;
+}
+
+.search-card {
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.08);
+  padding: 14px 16px;
+}
+
+.search-form {
+  width: 100%;
+}
+
+.search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-icon {
+  color: #6b7280;
+}
+
+.search-input {
+  flex: 1;
+  height: 44px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background: #fbfbfd;
+  outline: none;
+  font-size: 0.98rem;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
+}
+
+.search-input:focus {
+  border-color: #9ca3af;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(55, 65, 81, 0.1);
+}
+
+/* Footer theme */
+.site-footer {
+  background: linear-gradient(180deg, #0f172a, #0b1220);
+  color: #e5e7eb;
+  padding-top:10px;
+  padding-bottom: 10px;
+  font-size: 0.9rem; /* slightly smaller overall footer text */
+}
+
+.site-footer h2, .site-footer h6 {
+  color: #e5e7eb;
+}
+
+/* Make footer headings smaller */
+.site-footer h2 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.site-footer h6 {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* Fix footer to bottom */
+/* switched to sticky footer layout via flex container */
+
+/* App shell for sticky footer */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
